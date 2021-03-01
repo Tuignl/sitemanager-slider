@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slider</title>        
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide', {                
+            type: 'loop',
+            perPage: 2,
+            gap: '10px',
+            'arrows': true,
+            activeClass: 'is-active',
+            updateOnMove: true,
+            perMove: 1,
+            breakpoints : {
+                '950': {
+                    perPage: 1,
+                }
+            },
+            arrowPath: 'M22.355,14.303l7.061,-6.874c-0,-0 -7.061,-6.875 -7.061,-6.875l0.54,-0.554l7.629,7.429l-7.629,7.428l-0.54,-0.554Z M29.766,7.815l-29.766,0l0,-0.773l29.766,0l0,0.773Z',
+        } ).mount();
+        } );
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">   
+    <script src="javascript/splide.js"></script> 
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>    
+<body>
+    <div id="wrapper" class="splide">
+        <div id="onze-diensten">
+            <h1>Onze diensten</h1>
+            <p id="diensten-uitleg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>              
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="slide_image" id="image1">
+                    <div class="slide-hover hide">
+                        <div class="slide-text">
+                            <h1>Zonnepanelen</h1>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide_image" id="image2">
+                        <div class="slide-hover hide">
+                            <div class="slide-text">
+                                <h1>Warmtepompen</h1>
+                                <p>In de grond, in water of in de buitenlucht zit voldoende energie die kan gebruikt worden om te verwarmen. Met een warmtepomp wordt deze aangewend voor de verwarming van werk- of leefruimtes en voor de productie van sanitair warm water.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide_image" id="image3">
+                        <div class="slide-hover hide">
+                            <div class="slide-text">
+                                <h1>Zonnepanelen</h1>
+                            </div>
+                        </div>
+                   </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+<div id="background-square"></div>  
+<script src="textanimation.js"></script>       
+</body>    
+</html>
